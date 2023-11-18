@@ -61,14 +61,6 @@ class MainActivity : AppCompatActivity() {
         val operator2 = binding.TwoOperandTxt.text.toString().toInt()
         val operandTxt = binding.OperationTxt.text.toString()
         val resultPlayer = binding.EditNumberTxt.text.toString().toInt()
-        if (checkResult(operandTxt,operator1,operator2,resultPlayer))
-        {
-            wins +=1
-            allExamples +=1
-            percentage = (allExamples/wins).toDouble()
-            binding.NumberRigthTxt.text = wins.toString()
-            binding.EditNumberTxt.setBackgroundColor(Color.GREEN)
-            binding.AllExamplesTxt.text = allExamples.toString()}
         var percentage = 0.0
         binding.CheckAnswerBtn.isEnabled = false
         binding.StartBtn.isEnabled = true
